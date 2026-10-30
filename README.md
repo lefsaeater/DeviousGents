@@ -1,11 +1,33 @@
 # The Devious Gents
 
-A simple static website for https://thedeviousgents.com.
+The official band website for The Devious Gents, based in Bozeman, Montana:
+https://thedeviousgents.com.
 
 ## Editing
 
 Edit [index.html](index.html) to change the page content or styles.
 No dependencies or build tools are required. Open it in a browser to preview.
+
+The page includes a responsive band introduction, band artwork, show
+announcements, and an Instagram contact section. Styles are included in the HTML,
+with no external font, image, or script dependencies.
+
+The supplied band images live in [assets/images](assets/images):
+[transparent color logo](assets/images/devious-gents-badge-transparent.png) is the
+primary brand mark in the header and hero, displayed directly against the site
+background without a frame. Its turquoise, orange, and red palette and
+Western-inspired serif typography guide the site design. The
+[white-background color logo](assets/images/devious-gents-color.jpg) is retained
+for Open Graph sharing previews so it remains readable on different platforms.
+The [black-and-white logo](assets/images/devious-gents-logo.png) is a smaller,
+secondary accent in the band section. Both are displayed uncropped with their
+original proportions. Keep these assets with the HTML when publishing.
+
+Update the shows section when dates are confirmed, replacing the announcement
+message with real venue, date, and ticket information. The band and contact
+sections can be expanded as music, photos, and a booking email become available.
+Instagram links currently point to `https://www.instagram.com/thedeviousgents/`.
+Keep the page description and Open Graph metadata in sync with content changes.
 
 ## Publishing
 
