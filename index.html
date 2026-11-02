@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Meet The Devious Gents, a band from Bozeman, Montana. Find show announcements, follow the band, and get in touch on Instagram.">
+    <meta name="description" content="Meet The Devious Gents, a band from Bozeman, Montana. Find show announcements, follow the band, and send us a booking request or message.">
     <meta name="color-scheme" content="dark">
     <meta name="theme-color" content="#091f22">
     <meta property="og:type" content="website">
@@ -168,7 +168,7 @@
       h3 { margin: 0; font-size: 1.12rem; line-height: 1.4; }
       .show-card p { margin: .5rem 0 0; color: var(--muted); font-size: .9rem; line-height: 1.6; }
       .show-card .text-link { flex-shrink: 0; }
-      .about { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+      .about { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem 5rem; align-items: start; }
       .band-logo {
         display: block;
         width: min(100%, 280px);
@@ -180,6 +180,34 @@
       }
       .about-copy p { margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.9; }
       .about-copy p + p { margin-top: 1rem; }
+      .live-photos {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1.6fr 1fr;
+        gap: 1.5rem;
+        align-items: start;
+      }
+      .live-photos h3 {
+        grid-column: 1 / -1;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 1.6rem;
+        color: var(--orange);
+      }
+      .live-photos figure {
+        min-width: 0;
+        margin: 0;
+        border: 1px solid var(--line);
+        border-top: 3px solid var(--turquoise);
+        background: var(--panel);
+      }
+      .live-photos img { display: block; width: 100%; height: auto; }
+      .live-photos figcaption {
+        padding: 1rem 1.2rem;
+        border-bottom: 2px solid var(--orange);
+        color: var(--muted);
+        font-size: .8rem;
+        line-height: 1.5;
+      }
       .contact {
         display: flex;
         justify-content: space-between;
@@ -237,6 +265,7 @@
         .show-info { align-items: start; gap: 1rem; }
         .show-icon { flex-basis: 48px; height: 48px; }
         .about { grid-template-columns: 1fr; gap: 1.5rem; }
+        .live-photos { grid-template-columns: 1fr; }
         .contact { flex-direction: column; align-items: start; gap: 1.5rem; padding: 1.75rem; margin-bottom: 3rem; }
         .site-footer { align-items: start; flex-direction: column; gap: 1rem; }
       }
@@ -256,7 +285,7 @@
       <nav aria-label="Main navigation">
         <a href="#shows">Shows</a>
         <a href="#band">The band</a>
-        <a href="#contact">Contact</a>
+        <a href="contact.html">Contact</a>
         <a class="social-link" href="https://www.instagram.com/thedeviousgents/">Instagram <span aria-hidden="true">&#8599;</span></a>
       </nav>
     </header>
@@ -305,15 +334,26 @@
           <p>We're The Devious Gents, a band calling Bozeman, Montana home. This is our little corner of the web &mdash; a place to find out what's next and stay connected.</p>
           <p>More music and more of our story will land here soon. In the meantime, find us on <a href="https://www.instagram.com/thedeviousgents/">Instagram</a> and come along for the ride.</p>
         </div>
+        <div class="live-photos" role="group" aria-labelledby="photos-title">
+          <h3 id="photos-title">On stage. In our element.</h3>
+          <figure>
+            <img src="assets/images/window-light-vignette.jpg" width="1399" height="768" alt="The Devious Gents playing bass and acoustic guitars beside sunlit windows" loading="lazy" decoding="async">
+            <figcaption>Window light &amp; live music.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/crowd-view.jpg" width="879" height="768" alt="A view from the crowd of The Devious Gents performing outdoors with bass and acoustic guitars" loading="lazy" decoding="async">
+            <figcaption>A view from the crowd.</figcaption>
+          </figure>
+        </div>
       </section>
 
       <section id="contact" class="contact" aria-labelledby="contact-title">
         <div>
           <p class="eyebrow">03 / Get in touch</p>
           <h2 id="contact-title">Let's make some noise.</h2>
-          <p>Booking inquiries, collaborations, or just saying hello? Send us a message on Instagram.</p>
+          <p>Booking inquiries, collaborations, or just saying hello? Send us a request through our contact form.</p>
         </div>
-        <a class="button" href="https://www.instagram.com/thedeviousgents/">Connect on Instagram <span aria-hidden="true">&#8599;</span></a>
+        <a class="button" href="contact.html">Send a request <span aria-hidden="true">&#8594;</span></a>
       </section>
     </main>
     <footer class="site-footer container">
